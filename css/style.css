@@ -1,0 +1,39 @@
+/* Lettertype: Manrope (Google Fonts, geladen in de <head> van elke pagina) */
+body {
+  font-family: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* Label in hoofdletters boven een titel */
+.label {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #8c4a5b; /* donkerder roze voor voldoende contrast op #F7F3EF */
+}
+
+/* Titels met dichte letterafstand */
+.titel {
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  font-weight: 800;
+}
+
+/* Tekstlinks met onderlijn en hover */
+.tekstlink {
+  color: #8c4a5b;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.15s;
+}
+.tekstlink:hover { color: #183d32; }
+
+/* Zichtbare focus voor toetsenbordgebruikers */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid #a65f70;
+  outline-offset: 3px;
+}
+header a:focus-visible, header button:focus-visible, footer a:focus-visible, .op-donker a:focus-visible {
+  outline-color: #f7f3ef;
+}

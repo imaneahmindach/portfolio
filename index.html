@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home – Portfolio Imane Ahmindach</title>
+  <meta name="description"
+    content="Portfolio van Imane Ahmindach, student Systeem- en netwerkbeheer aan AP Hogeschool.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tailwind.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-[#F7F3EF] text-[#183D32]">
+  <a href="#inhoud"
+    class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:bg-white focus:px-4 focus:py-2">Naar
+    de inhoud</a>
+
+  <header class="bg-[#080D0A] text-[#F7F3EF]">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between px-4 py-2">
+      <a href="index.html" class="block">
+        <img src="images/ia-monogram-licht.svg" width="120" height="84" alt="Logo I.A. – naar de startpagina" class="h-14 w-auto">
+      </a>
+      <button id="menu-knop" type="button" aria-expanded="false" aria-controls="hoofdmenu"
+        class="p-3 hover:bg-white/10 md:hidden">
+        <span class="sr-only">Menu</span>
+        <span id="icoon-open"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="h-6 w-6 shrink-0" aria-hidden="true">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg></span>
+        <span id="icoon-dicht" class="hidden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="h-6 w-6 shrink-0" aria-hidden="true">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg></span>
+      </button>
+      <nav id="hoofdmenu" aria-label="Hoofdmenu" class="hidden w-full md:block md:w-auto">
+        <ul class="flex flex-col md:flex-row">
+          <li><a href="index.html"
+              class="block px-5 py-4 text-sm font-bold uppercase tracking-widest text-[#F7F3EF] transition-colors hover:bg-white/10 hover:text-white aria-[current=page]:bg-[#A65F70] aria-[current=page]:text-white"
+              aria-current="page">Home</a></li>
+          <li><a href="portfolio.html"
+              class="block px-5 py-4 text-sm font-bold uppercase tracking-widest text-[#F7F3EF] transition-colors hover:bg-white/10 hover:text-white aria-[current=page]:bg-[#A65F70] aria-[current=page]:text-white">Portfolio</a>
+          </li>
+          <li><a href="project.html"
+              class="block px-5 py-4 text-sm font-bold uppercase tracking-widest text-[#F7F3EF] transition-colors hover:bg-white/10 hover:text-white aria-[current=page]:bg-[#A65F70] aria-[current=page]:text-white">Project</a>
+          </li>
+          <li><a href="contact.html"
+              class="block px-5 py-4 text-sm font-bold uppercase tracking-widest text-[#F7F3EF] transition-colors hover:bg-white/10 hover:text-white aria-[current=page]:bg-[#A65F70] aria-[current=page]:text-white">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhoud">
+    <section class="relative bg-[url(../images/ia-infrastructure.jpg)] bg-cover bg-center">
+      <div class="absolute inset-0 bg-black/70" aria-hidden="true"></div>
+      <div class="mx-auto max-w-6xl px-4 relative py-24 text-white md:py-40">
+        <p class="label text-[#F7F3EF]!">Portfolio</p>
+        <h1 class="titel mt-3 max-w-3xl text-4xl sm:text-5xl lg:text-7xl">Welkom op mijn portfolio</h1>
+        <p class="mt-6 max-w-xl text-lg leading-relaxed">Hallo! Ik ben Imane Ahmindach, student Systeem- en netwerkbeheer aan AP
+          Hogeschool. Hier verzamel ik mijn projecten, opdrachten en ervaringen.</p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="portfolio.html"
+            class="inline-flex items-center gap-2 px-6 py-3 text-sm font-bold uppercase tracking-widest transition-colors bg-[#A65F70] text-white hover:bg-[#8C4A5B]">Ontdek
+            mijn projecten <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0"
+              aria-hidden="true">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg></a>
+          <a href="contact.html"
+            class="inline-flex items-center gap-2 px-6 py-3 text-sm font-bold uppercase tracking-widest transition-colors border-2 border-white text-white hover:bg-white hover:text-[#183D32]">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-6xl px-4 grid items-center gap-10 py-16 md:grid-cols-[1fr_2fr] md:py-24">
+      <img src="images/professionele-foto.jpg" width="800" height="1069" alt="Profielfoto van Imane"
+        class="mx-auto aspect-square w-56 rounded-full object-cover object-[50%_55%] md:w-72">
+      <div>
+        <p class="label">Over mij</p>
+        <h2 class="titel mt-2 text-3xl md:text-4xl">Student Systeem- en netwerkbeheer</h2>
+        <p class="mt-4 max-w-prose leading-relaxed">Ik ben geïnteresseerd in IT, computers, netwerken en de technologie
+          die ervoor zorgt dat systemen betrouwbaar en veilig werken. Ik wil leren hoe ik IT-problemen efficiënt en
+          gestructureerd kan oplossen, en hoe verschillende systemen met elkaar samenwerken.</p>
+        <p class="mt-4 max-w-prose leading-relaxed">Dit portfolio is een overzicht van mijn leerproces. Ik vul het
+          doorheen mijn opleiding aan met projecten, praktische opdrachten en nieuwe vaardigheden.</p>
+      </div>
+    </section>
+
+    <section class="bg-[#E9E1D8] py-16 md:py-24">
+      <div class="mx-auto max-w-6xl px-4">
+        <p class="label">Opleiding</p>
+        <h2 class="titel mt-2 text-3xl md:text-4xl">AP Hogeschool – Systeem- en netwerkbeheer</h2>
+        <p class="mt-4 max-w-prose leading-relaxed">Ik combineer theorie met praktische oefeningen en projecten, en bouw
+          mijn kennis stap voor stap op.</p>
+        <ul class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <li class="bg-white p-6">
+            <span class="inline-flex bg-[#183D32] p-3 text-[#F7F3EF]"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="h-6 w-6 shrink-0" aria-hidden="true">
+                <polyline points="4 17 10 11 4 5" />
+                <line x1="12" x2="20" y1="19" y2="19" />
+              </svg></span>
+            <h3 class="titel mt-4 text-xl">Besturingssystemen</h3>
+            <p class="mt-2 text-sm leading-relaxed">Installeren, configureren en beheren van besturingssystemen.</p>
+          </li>
+          <li class="bg-white p-6">
+            <span class="inline-flex bg-[#183D32] p-3 text-[#F7F3EF]"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="h-6 w-6 shrink-0" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                <path d="M2 12h20" />
+              </svg></span>
+            <h3 class="titel mt-4 text-xl">Netwerken</h3>
+            <p class="mt-2 text-sm leading-relaxed">Netwerkconfiguraties opbouwen en begrijpen hoe systemen
+              communiceren.</p>
+          </li>
+          <li class="bg-white p-6">
+            <span class="inline-flex bg-[#183D32] p-3 text-[#F7F3EF]"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="h-6 w-6 shrink-0" aria-hidden="true">
+                <rect width="20" height="8" x="2" y="2" rx="2" />
+                <rect width="20" height="8" x="2" y="14" rx="2" />
+                <path d="M6 6h.01M6 18h.01" />
+              </svg></span>
+            <h3 class="titel mt-4 text-xl">Serverbeheer</h3>
+            <p class="mt-2 text-sm leading-relaxed">Servers opzetten, onderhouden en betrouwbaar houden.</p>
+          </li>
+          <li class="bg-white p-6">
+            <span class="inline-flex bg-[#183D32] p-3 text-[#F7F3EF]"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="h-6 w-6 shrink-0" aria-hidden="true">
+                <rect width="16" height="16" x="4" y="4" rx="2" />
+                <rect width="6" height="6" x="9" y="9" />
+                <path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2" />
+              </svg></span>
+            <h3 class="titel mt-4 text-xl">Hardware</h3>
+            <p class="mt-2 text-sm leading-relaxed">Werken met hardware en technische problemen oplossen.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-6xl px-4 py-16 md:py-24">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p class="label">Projecten</p>
+          <h2 class="titel mt-2 text-3xl md:text-4xl">Recent werk</h2>
+        </div>
+        <a href="portfolio.html" class="tekstlink">Alle projecten bekijken</a>
+      </div>
+      <ul class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <li>
+          <a href="project.html" class="group block h-full bg-white transition-shadow hover:shadow-xl">
+            <img src="images/ia-signal.jpg" width="1200" height="900" alt="Groene netwerkkabels in een serverkast"
+              class="aspect-4/3/3 w-full object-cover">
+            <div class="p-5">
+              <p class="label">Netwerken</p>
+              <h3 class="titel mt-2 text-xl group-hover:underline">Project 1 – Netwerk opzetten</h3>
+              <p class="mt-2 text-sm leading-relaxed">Een klein netwerk opgebouwd met een router en switches, inclusief
+                IP-adressering en basisinstellingen.</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="project2.html" class="group block h-full bg-white transition-shadow hover:shadow-xl">
+            <img src="images/ia-infrastructure.jpg" width="1200" height="900" alt="Rijen servers in een datacenter"
+              class="aspect-4/3/3 w-full object-cover">
+            <div class="p-5">
+              <p class="label">Serverbeheer</p>
+              <h3 class="titel mt-2 text-xl group-hover:underline">Project 2 – Server configureren</h3>
+              <p class="mt-2 text-sm leading-relaxed">Een server geïnstalleerd en ingesteld met gebruikers, rechten en
+                een aantal basisdiensten.</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="project3.html" class="group block h-full bg-white transition-shadow hover:shadow-xl">
+            <img src="images/ia-terminal.jpg" width="1200" height="900" alt="Laptop met code op het scherm"
+              class="aspect-4/3/3 w-full object-cover">
+            <div class="p-5">
+              <p class="label">Scripting</p>
+              <h3 class="titel mt-2 text-xl group-hover:underline">Project 3 – Scripting</h3>
+              <p class="mt-2 text-sm leading-relaxed">Kleine scripts geschreven om terugkerende taken te automatiseren
+                en tijd te besparen.</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="bg-[#183D32] text-[#F7F3EF]">
+    <div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 sm:flex-row sm:items-center sm:justify-between">
+      <p class="text-sm">© 2026 Imane Ahmindach · Systeem- en netwerkbeheer, AP Hogeschool</p>
+      <ul class="flex gap-2">
+        <li><a href="contact.html" class="block p-3 hover:bg-[#A65F70]"><svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="h-5 w-5 shrink-0" aria-hidden="true">
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg><span class="sr-only">E-mail</span></a></li>
+        <li><a href="#" class="block p-3 hover:bg-[#A65F70]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="h-5 w-5 shrink-0" aria-hidden="true">
+              <path
+                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+              <path d="M9 18c-4.51 2-5-2-7-2" />
+            </svg><span class="sr-only">GitHub</span></a></li>
+        <li><a href="#" class="block p-3 hover:bg-[#A65F70]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="h-5 w-5 shrink-0" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect width="4" height="12" x="2" y="9" />
+              <circle cx="4" cy="4" r="2" />
+            </svg><span class="sr-only">LinkedIn</span></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    const knop = document.getElementById('menu-knop');
+    const menu = document.getElementById('hoofdmenu');
+    function zet(open) {
+      menu.classList.toggle('hidden', !open);
+      knop.setAttribute('aria-expanded', open);
+      document.getElementById('icoon-open').classList.toggle('hidden', open);
+      document.getElementById('icoon-dicht').classList.toggle('hidden', !open);
+    }
+    knop.addEventListener('click', () => zet(knop.getAttribute('aria-expanded') !== 'true'));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') { zet(false); knop.focus(); } });
+  </script>
+</body>
+
+</html>
