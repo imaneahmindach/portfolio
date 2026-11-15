@@ -9,7 +9,8 @@ body {
   letter-spacing: 0.2em;
   font-size: 0.75rem;
   font-weight: 800;
-  color: #8c4a5b; /* donkerder roze voor voldoende contrast op #F7F3EF */
+  color: #8c4a5b;
+  /* donkerder roze voor voldoende contrast op #F7F3EF */
 }
 
 /* Titels met dichte letterafstand */
@@ -27,13 +28,27 @@ body {
   text-underline-offset: 4px;
   transition: color 0.15s;
 }
-.tekstlink:hover { color: #183d32; }
+
+.tekstlink:hover {
+  color: #183d32;
+}
 
 /* Zichtbare focus voor toetsenbordgebruikers */
-a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
   outline: 3px solid #a65f70;
   outline-offset: 3px;
 }
-header a:focus-visible, header button:focus-visible, footer a:focus-visible, .op-donker a:focus-visible {
+
+header a:focus-visible,
+header button:focus-visible,
+footer a:focus-visible,
+.op-donker a:focus-visible {
   outline-color: #f7f3ef;
+}
+
+.label-licht {
+  color: #F7F3EF;
 }
